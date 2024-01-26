@@ -12,6 +12,11 @@
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                     content.</p>
                 <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-primary">Guarda i dettagli</a>
+                <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button class="btn btn-danger" type="submit">cancella</button>
+                </form>
             </div>
         </div>
     @endforeach
