@@ -11,7 +11,7 @@
                 <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                     content.</p>
-                b5
+                <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-primary">Guarda i dettagli</a>
             </div>
         </div>
     @endforeach
