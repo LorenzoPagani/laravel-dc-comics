@@ -1,13 +1,81 @@
 @import "~bootstrap/scss/bootstrap";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    font-family: sans-serif;
-    background: #222;
+    background-color: #1C1C1C;
+}
+
+header {
+    background-color: #0282F9;
+    color: #fff;
+}
+
+.bar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    background-color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+}
+
+nav li {
+    cursor: pointer;
+}
+
+.jumbo {
+    width: 100%;
+}
+
+.jumbo img {
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.comics-wrapper {
+    background-color: #1C1C1C;
+    padding: 3rem 0;
+}
+label {
     color: white;
 }
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+.comic-card {
+    width: calc(100% / 6 - 2rem);
+    margin: 0 1rem;
+    color: white;
+    cursor: pointer;
+
+
+}
+
+.comic-card img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+}
+
+footer {
+    background-image: url('/public/assets/images/footer-bg.jpg');
+    color: white;
+    padding: 2rem 0;
+    overflow: hidden;
+}
+
+.footer-logo {
+    position: absolute;
+    top: -17%;
+    right: 0%;
+    width: 85%;
 }
