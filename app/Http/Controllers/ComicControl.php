@@ -12,7 +12,7 @@ class ComicControl extends Controller
     {
         $validated = Validator::make($data, [
             'title' => 'required|max:100',
-            'description' => 'required|max:255',
+            'description' => 'required|max:355',
             'thumb' => 'required|max:255',
             'price' => 'required|numeric',
             'series' => 'required|max:100',
