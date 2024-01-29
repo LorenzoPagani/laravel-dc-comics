@@ -14,8 +14,7 @@ use App\Http\Controllers\ComicControl;
 */
 
 Route::get('/', function () {
-    $dati = config("data");
-    return view('home', $dati);
+    return redirect()->route('comics.index');
 })->name("home");
 
 Route::resource('/comics', ComicControl::class);
